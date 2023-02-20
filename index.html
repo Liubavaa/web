@@ -3,9 +3,251 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <title>My test page</title>
+        <title>Web</title>
     </head>
     <body>
-        <h1>Title</h1>
+        <header class="header">
+            <img class="background-img" src="images/header-background.png" alt="background-img">
+            <h3 class="company-logo">Trelo</h1>
+            <nav class="header-navigation">
+                <a class="header-nav-link" href="#">Review</a>
+                <a class="header-nav-link" href="#">Tips</a>
+                <a class="header-nav-link" href="#">Alerts</a>
+                <a class="header-nav-link" href="#">Blog</a>
+                <button class="header-nav-button">Blog</button>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="head-text">
+                <h1 class="head-text">Discover Your Life, Travel Where You Want</h1>
+                <h4 class="head-text">Would you explore natur paradise in the world, let’s find the best destination in world with us.</h2>
+            </section>
+
+            <section class="flight-hotel">
+                <header class="flight-hotel-header">
+                    <div class="flight-hotel-nav">
+                        <img class="flight-hotel-logo" src="images/airplane.png" alt="Plane">
+                        Flight
+                    </div>
+                    <div class="flight-hotel-nav">
+                        <img class="flight-hotel-logo" src="images/hotel.png" alt="Hotel">
+                        Hotel
+                    </div>
+                </header>
+                <main class="flight-hotel-main">
+                    <div class="select-place-time-div">
+                        <span class="select-place-time-text">Leaving from</span>
+                        <select name="select-place">
+                            <option value=""></option>
+                            <option value="Kyiv">Kyiv</option>
+                            <option value="Lviv">Lviv</option>
+                        </select>
+                        <img class="flight-hotel-img" src="images/airplane_gray.png" alt="Plane">
+                        <span class="select-place-time-text">Going to</span>
+                        <select name="selct-place">
+                            <option value=""></option>
+                            <option value="Kyiv">Kyiv</option>
+                            <option value="Lviv">Lviv</option>
+                        </select>
+                    </div>
+                    <div class="select-place-time-div">
+                        <span class="select-place-time-text">Leave</span>
+                        <img class="select-time-logo" src="images/airplane_blue.png" alt="Plane"></class>
+                        <input type="date" name="leave-time">
+                        <img class="flight-hotel-img" src="images/planner.png" alt="Planner">
+                        <span class="select-place-time-text">Return</span>
+                        <img class="select-time-logo" src="images/airplane_blue.png" alt="Plane"></class>
+                        <input type="date" name="return-time">
+                    </div>
+                    <button class="search">
+                        <img class="search-img" src="images/loop.png" alt="Loop">
+                    </button>
+                </main>
+            </section>
+
+            <section class="offers-section">
+                <header class="offer-header">
+                    <h3>Special Upcoming Offers</h3>
+                    <div class="offer-nav">
+                        <button class="offer-button">Team</button>
+                        <button class="offer-button">Couple</button>
+                        <button class="offer-button">Family</button>
+                    </div>
+                </header>
+                <main class="offer-main">
+                    <article class="offer-article">
+                        <img class="offer-img" src="images/offer1.png" alt="offer-img">
+                        <span class="offer-date">14 FEB 2022</span>
+                        <span class="offer-type">Relax</span>
+                        <span class="offer-name">Loga Sea</span>
+                        <span class="offer-price">700$/Person</span>
+                        <button class="offer-book-button">Book Now</button>
+                    </article>
+                    <article class="offer-article">
+                        <img class="offer-img" src="images/offer1.png" alt="offer-img">
+                        <span class="offer-date">14 FEB 2022</span>
+                        <span class="offer-type">Relax</span>
+                        <span class="offer-name">Loga Sea</span>
+                        <span class="offer-price">700$/Person</span>
+                        <button class="offer-book-button">Book Now</button>
+                    </article>
+                    <article class="offer-article">
+                        <img class="offer-img" src="images/offer1.png" alt="offer-img">
+                        <span class="offer-date">14 FEB 2022</span>
+                        <span class="offer-type">Relax</span>
+                        <span class="offer-name">Loga Sea</span>
+                        <span class="offer-price">700$/Person</span>
+                        <button class="offer-book-button">Book Now</button>
+                    </article>
+                </main>
+            </section>
+
+            <section class="contact-section">
+                <div class="add-info-left">
+                    <img class="add-info-img" src="images/add-info.png">
+                    <span class="add-info-text">300+ destinations</span>
+                    <span class="add-info-text">1000+ tourists</span>
+                    <span class="add-info-text">150+ hotels</span>
+                </div>
+                <div class="add-info-right">
+                    <h3>Travel Any Corner of The World With Us</h3>
+                    <p class="add-info-p">bla-bla-bla</p>
+                    <button class="contact-us">Contact Us</button>
+                </div>
+            </section>
+
+            <section class="recommended-dest-section">
+                <header class="recommended-dest-header">
+                    <h3>Recommended Destination</h3>
+                    <div class="rec-dest-nav">
+                        <button class="rec-dest-button">Popular</button>
+                        <button class="rec-dest-button">Adventure</button>
+                        <button class="rec-dest-button">Beath</button>
+                    </div>
+                </header>
+                <main class="recommended-dest-main">
+                    <article class="rec-dest-article">
+                        <div class="rec-img-div">
+                            <img class="rec-img" src="images/recommend-destinations.png">
+                            <div class="rating-div">
+                                <img class="rating-star" src="images/star.png" alt="star">
+                                <span class="rating-number">3.4</span>
+                            </div>
+                        </div>
+                        <div class="rec-dest-info">
+                            <span class="dest-info-name">Kina Mountain</span>
+                            <div class="dest-info-place">
+                                <img class="dest-info-point" src="images/location.png" alt="location">
+                                <span class="dest-info-place">Cambodia</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rec-dest-article">
+                        <div class="rec-img-div">
+                            <img class="rec-img" src="images/recommend-destinations.png">
+                            <div class="rating-div">
+                                <img class="rating-star" src="images/star.png" alt="star">
+                                <span class="rating-number">3.4</span>
+                            </div>
+                        </div>
+                        <div class="rec-dest-info">
+                            <span class="dest-info-name">Kina Mountain</span>
+                            <div class="dest-info-place">
+                                <img class="dest-info-point" src="images/location.png" alt="location">
+                                <span class="dest-info-place">Cambodia</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rec-dest-article">
+                        <div class="rec-img-div">
+                            <img class="rec-img" src="images/recommend-destinations.png">
+                            <div class="rating-div">
+                                <img class="rating-star" src="images/star.png" alt="star">
+                                <span class="rating-number">3.4</span>
+                            </div>
+                        </div>
+                        <div class="rec-dest-info">
+                            <span class="dest-info-name">Kina Mountain</span>
+                            <div class="dest-info-place">
+                                <img class="dest-info-point" src="images/location.png" alt="location">
+                                <span class="dest-info-place">Cambodia</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rec-dest-article">
+                        <div class="rec-img-div">
+                            <img class="rec-img" src="images/recommend-destinations.png">
+                            <div class="rating-div">
+                                <img class="rating-star" src="images/star.png" alt="star">
+                                <span class="rating-number">3.4</span>
+                            </div>
+                        </div>
+                        <div class="rec-dest-info">
+                            <span class="dest-info-name">Kina Mountain</span>
+                            <div class="dest-info-place">
+                                <img class="dest-info-point" src="images/location.png" alt="location">
+                                <span class="dest-info-place">Cambodia</span>
+                            </div>
+                        </div>
+                    </article>
+                </main>
+            </section>
+
+            <section class="feedback-section">
+                <article class="feedback-article">
+                    <div class="feedback-info-div">
+                        <img class="quotes-img" src="images/quotes.png" alt="quotes">
+                        <p class="feedback-comment">bla-bla-bla</p>
+                        <span class="feedback-author">- Vana D</span>
+                        <span class="company-in-feedback">Happy Trelo</span>
+                    </div>
+                    <div class="feedback-author-img">
+                        <img class="author-img" src="images/author.png" alt="Author">
+                        <div class="author-rating">
+                            <img class="rating-star" src="images/star.png" alt="star">
+                            <span class="rating-number">4.5</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="feedback-article">
+                    <div class="feedback-info-div">
+                        <img class="quotes-img" src="images/quotes.png" alt="quotes">
+                        <p class="feedback-comment">bla-bla-bla</p>
+                        <span class="feedback-author">- Vana D</span>
+                        <span class="company-in-feedback">Happy Trelo</span>
+                    </div>
+                    <div class="feedback-author-img">
+                        <img class="author-img" src="images/author.png" alt="Author">
+                        <div class="author-rating">
+                            <img class="rating-star" src="images/star.png" alt="star">
+                            <span class="rating-number">4.5</span>
+                        </div>
+                    </div>
+                </article>
+                <div class="feedback-button-div">
+                    <button class="change-feedbacks">
+                        <img class="left-vector" src="images/vector.png">
+                    </button>
+                    <button class="change-feedbacks">
+                        <img class="right-vector" src="images/vector.png">
+                    </button>
+                </div>
+            </section>
+
+            <section class="discount-section">
+                <img class="discount-background" src="images/discount-background.png" alt="Discount">
+                <span class="discount-header">Don't Miss The 50% Discount if You register Today</span>
+                <button class="discount-register-button">Register Today</button>
+            </section>
+        </main>
+        <footer class="footer">
+            <span class="company-right">© 2022 Treloo LLC - All right reserved.</span>
+            <nav class="footer-nav">
+                <a class="footer-nav-link" href="#">Review</a>
+                <a class="footer-nav-link" href="#">Tips</a>
+                <a class="footer-nav-link" href="#">Alerts</a>
+                <a class="footer-nav-link" href="#">Blog</a>
+            </nav>
+        </footer>
     </body>
 </html>
