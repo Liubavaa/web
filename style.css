@@ -1,0 +1,770 @@
+body {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+	background-image: url('images/header-background.png');
+	background-size: cover;
+	background-position: center center;
+    padding: 0 9%;
+    height: 920px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-head{
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-logo{
+    font-size: 48px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.header-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.header-nav-button{
+    background: #FFFFFF;
+    border-radius: 10px;
+    min-width: 144px;
+    height: 65px;
+    font-size: 24px;
+    color: #3E86F5;
+    border: 0;
+}
+
+.header-nav-link{
+    text-decoration: none;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-right: 8%;
+}
+
+.head-text{
+    align-self: center;
+    text-align: center;
+    width: 70%;
+    margin-top: 15%;
+}
+
+.head-text h1{
+    align-self: center;
+    font-size: 64px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.head-text h4{
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.main{
+    padding: 24px 9% 3.5%;
+    background-color: #F7F7F7;
+}
+
+.flight-hotel{
+    position: relative;
+    top: -170px;
+    width: 100%;
+}
+
+.flight-hotel-header{
+    width: 23.7%;
+    min-width: 200px;
+    height: 100px;
+    border-radius: 25px 25px 0px 0px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flight-hotel-button{
+    width: 45%;
+    height: 66%;
+    border-radius: 25px;
+    background-color: inherit;
+    border: 0;
+    font-size: 18px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flight-hotel-button.active{
+    background: rgba(62, 134, 245, 0.2);
+}
+
+.flight-hotel-main{
+    background-color: white;
+    border-radius: 0px 50px 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 94%;
+    padding: 5% 4%;
+    gap: 5px;
+}
+
+.select-place-time-div{
+    padding: 4% 2%;
+    border: 2px solid rgba(172, 172, 172, 0.5);
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.place{
+    width: 30%;
+}
+
+.time{
+    width: 38.6%;
+    min-width: 428px;
+}
+
+.select-place-div, .select-date-div{
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    width: fit-content;
+}
+
+.flight-hotel-img{
+    align-self: center;
+    padding: 6px;
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin: 0 9%;
+}
+
+.select-place{
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 24px;
+    margin-top: 8px;
+    outline: none;
+}
+
+.date-text{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 7px;
+}
+
+.select-date{
+    position: relative;
+    left: -7px;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    margin-top: 8px;
+}
+
+.search-button{
+    background: rgba(62, 134, 245, 0.8);
+    border-radius: 65px;
+    width: 15%;
+    padding: 4.5% 0 4.5% 0;
+    border: 0;
+}
+
+.offers-section, .recommended-dest-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20%;
+    width: 100%;
+}
+
+.offer-header, .recommended-dest-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.offer-header h3, .recommended-dest-header h3{
+    margin-top: 0;
+    margin-bottom: 2.8%;
+    font-size: 48px;
+    color: #000000;
+    text-align: center;
+}
+
+.offer-nav{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    width: 30%;
+    height: 50px;
+    padding: 10px;
+    margin: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer-button{
+    border-radius: 10px;
+    width: 31%;
+    height: 100%;
+    border: 0;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.offer-button.active{
+    background: #3E86F5;
+    color: white;
+}
+
+.offer-main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.offer-article{
+    background-color: white;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+    width: 33%;
+    padding-right: 13px;
+}
+
+.offer-top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.offer-img{
+    width: 77%;
+    margin: 21px 0px 20px 27px;
+}
+
+.offer-date{
+    writing-mode: vertical-rl;
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    margin-right: 5px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.5em;
+}
+
+.offer-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    margin-left: 13%;
+    margin-bottom: 7%;
+    margin-right: 14px;
+}
+
+.offer-type-duration{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 12px;
+}
+
+.offer-type{
+    border-radius: 100px;
+    font-size: 14px;
+    height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-type.relax{
+    width: 23%;
+    min-width: 43px;
+    color: #F178B6;
+    background: #FCDDEC;
+}
+
+.offer-type.adventure{
+    width: 34%;
+    min-width: 69px;
+    color: #7879F1;
+    background: #F1F1FD;
+}
+
+.offer-duration{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.offer-name{
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+    max-height: 40px;
+}
+
+.offer-price-book{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.offer-price{
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+}
+
+.text-per-person{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.offer-book-button{
+    background: #F2F6FF;
+    border-radius: 10px;
+    border: 0;
+    font-size: 14px;
+    color: #3E86F5;
+    width: 35%;
+    height: 47px;
+}
+
+.contact-section{
+    display: flex;
+    width: 100%;
+    margin-bottom: 17%;
+}
+
+.add-info-left{
+    width: 50%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.add-info-img{
+    width: 84%;
+}
+
+.add-statistic-div{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+    width: 23%;
+    padding: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add-info-blue{
+    font-weight: 600;
+    font-size: 36px;
+    color: #3E86F5;
+}
+
+.add-info-black{
+    font-weight: 300;
+    font-size: 18px;
+    color: #000000;
+}
+
+.add-statistic-div.first{
+    position: absolute;
+    top: 7%;
+    right: 2%;
+}
+
+.add-statistic-div.second{
+    position: absolute;
+    top: 47%;
+    left: -16%;
+}
+
+.add-statistic-div.third{
+    position: absolute;
+    bottom: 17%;
+    right: 2%;
+}
+
+.add-info-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.add-info-right h3{
+    font-weight: 600;
+    font-size: 48px;
+    color: #000000;
+    line-height: 150%;
+    margin: 4% 0;
+}
+
+.add-info-p{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 200%;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-us{
+    background: #3E86F5;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: 0;
+    width: 31%;
+    height: 9%;
+    margin-top: 3%;
+}
+
+.rec-dest-nav{
+    width: 30%;
+    min-width: 330px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rec-dest-button{
+    background-color: inherit;
+    border-radius: 10px;
+    width: 31%;
+    height: 90%;
+    border: 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.rec-dest-button.active{
+    color: #3E86F5;
+    background-color: white;
+}
+
+.recommended-dest-main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.rec-dest-article{
+    background-color: white;
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    width: 25%;
+}
+
+.rec-img-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.rec-img{
+    width: 92%;
+    margin: 10px;
+}
+
+.rating-div{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background: #FFFFFF;
+    border-radius: 25px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.rating-number{
+    font-weight: 500;
+    font-size: 12px;
+    color: #000000;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.rec-dest-info{
+    padding: 3.5% 10% 3.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.dest-info-name{
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+}
+
+.dest-info-place{
+    display: flex;
+}
+
+.dest-info-place-name{
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.feedback-section{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 29% 0 11.6% 0;
+}
+
+.articles{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.feedback-article{
+    width: 50%;
+    margin-bottom: 50px;
+    background: #FFFFFF;
+    background-image: url("images/quotes.png");
+    background-size: 22.5%;
+    background-position: center 36px;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.feedback-info-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 11.5% 25px 0 25px;
+}
+
+.feedback-comment{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    line-height: 42px;
+    margin-bottom: 12px;
+}
+
+.feedback-author{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #3E86F5;
+    margin-bottom: 15px;
+}
+
+.company-in-feedback{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.feedback-author-img{
+    background-color: white;
+    width: 31%;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -11%;
+    margin-top: -5%;
+}
+
+.author-rating{
+    position: absolute;
+    background: white;
+    border-radius: 25px;
+    width: 45px;
+    height: 20px;
+    left: 60%;
+    top: 19%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.feedback-button-div{
+    margin-top: 3%;
+    display: flex;
+    gap: 20px;
+}
+
+.change-feedbacks-button{
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(62, 134, 245, 0.5);
+    border-radius: 15px;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-vector{
+    transform: rotate(180deg);
+}
+
+.discount-section{
+    background-image: url("images/discount-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 9.8% 18.5%;
+    gap: 40px;
+    border-radius: 100px;
+}
+
+.discount-header{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.discount-register-button{
+    width: 31.2%;
+    min-width: 150px;
+    height: 80px;
+    border-radius: 25px;
+    background: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    color: #3E86F5;
+    border: 0;
+}
+
+.footer{
+    padding: 6% 9%;
+    width: 82%;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-right{
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10%;
+    width: 100%;
+}
+
+.footer-nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 1230px) {
+    .select-place-time-div{
+        height: 50%;
+    }
+
+    .search-button{
+        margin-top: 4%;
+        width: 100%;
+    }
+
+    .offer-date{
+        font-size: 16px;
+        letter-spacing: 0.3em;
+    }
+
+    .offer-name, .offer-price{
+        font-size: 21px;
+    }
+    
+    .text-per-person, .add-info-black{
+        font-size: 14px;
+    }
+
+    .add-info-right h3{
+        font-size: 40px;
+        line-height: 100%;
+    }
+
+    .add-info-p{
+        font-size: 17px;
+    }
+
+    .add-info-blue{
+        font-size: 32px;
+    }
+}
+
+button:active{
+    background-color: dimgray;
+}
